@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Salary 2026</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="eyebrow">Simulatore retribuzione netta</p>
+            <h1>Net Salary 2026</h1>
+            <p>
+                Calcola una stima del netto annuale e mensile a partire dalla RAL,
+                con il dettaglio delle principali trattenute considerate dalla MVP.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="calculator-section" aria-labelledby="calculator-title">
+            <div class="container">
+                <h2 id="calculator-title">Calcolo netto</h2>
+
+                <form id="salary-form">
+                    <label for="gross-annual-salary">RAL annuale</label>
+
+                    <div class="money-input">
+                        <span aria-hidden="true">€</span>
+                        <input
+                                type="number"
+                                id="gross-annual-salary"
+                                name="grossAnnualSalary"
+                                min="0"
+                                step="0.01"
+                                inputmode="decimal"
+                                placeholder="35000"
+                                required
+                        >
+                    </div>
+
+                    <button type="submit">Calcola netto</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="result-section" class="result-section" aria-labelledby="result-title" hidden>
+            <div class="container">
+                <h2 id="result-title">Risultato stimato</h2>
+
+                <div class="summary-results" aria-label="Sintesi del risultato">
+                    <article>
+                        <h3>Netto annuale</h3>
+                        <p id="annual-net-salary">€ 0,00</p>
+                    </article>
+
+                    <article>
+                        <h3>Netto medio mensile</h3>
+                        <p id="average-monthly-net-salary">€ 0,00</p>
+                    </article>
+                </div>
+
+                <dl class="calculation-details">
+                    <div>
+                        <dt>RAL</dt>
+                        <dd id="gross-annual-salary-result">€ 0,00</dd>
+                    </div>
+                    <div>
+                        <dt>Contributi INPS</dt>
+                        <dd id="employee-social-security-contributions">€ 0,00</dd>
+                    </div>
+                    <div>
+                        <dt>Imponibile fiscale</dt>
+                        <dd id="taxable-income">€ 0,00</dd>
+                    </div>
+                    <div>
+                        <dt>IRPEF lorda</dt>
+                        <dd id="gross-irpef">€ 0,00</dd>
+                    </div>
+                    <div>
+                        <dt>Detrazione lavoro dipendente</dt>
+                        <dd id="employee-tax-deduction-base">€ 0,00</dd>
+                    </div>
+                    <div>
+                        <dt>Maggiorazione</dt>
+                        <dd id="employee-tax-deduction-extra">€ 0,00</dd>
+                    </div>
+                    <div>
+                        <dt>Ulteriore detrazione</dt>
+                        <dd id="additional-tax-deduction">€ 0,00</dd>
+                    </div>
+                    <div>
+                        <dt>IRPEF netta</dt>
+                        <dd id="net-irpef">€ 0,00</dd>
+                    </div>
+                    <div>
+                        <dt>Addizionale regionale Lombardia</dt>
+                        <dd id="lombardy-regional-tax">€ 0,00</dd>
+                    </div>
+                    <div>
+                        <dt>Addizionale comunale Milano</dt>
+                        <dd id="milan-municipal-tax">€ 0,00</dd>
+                    </div>
+                    <div>
+                        <dt>Totale addizionali</dt>
+                        <dd id="total-local-taxes">€ 0,00</dd>
+                    </div>
+                    <div>
+                        <dt>Totale trattenute</dt>
+                        <dd id="total-withholdings">€ 0,00</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="assumptions-section" aria-labelledby="assumptions-title">
+            <div class="container">
+                <h2 id="assumptions-title">Assunzioni della simulazione</h2>
+
+                <ul>
+                    <li>Anno 2026.</li>
+                    <li>Lavoratore dipendente privato.</li>
+                    <li>Contratto a tempo indeterminato.</li>
+                    <li>Residente a Milano.</li>
+                    <li>Nessuna agevolazione particolare.</li>
+                    <li>Nessun familiare a carico.</li>
+                    <li>12 mensilita utilizzate per il calcolo del valore medio.</li>
+                    <li>Trattamento integrativo escluso dalla MVP.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                Questa pagina fornisce una simulazione semplificata basata sulle assunzioni della MVP.
+                Non sostituisce un cedolino, una consulenza fiscale o un calcolo payroll completo.
+            </p>
+        </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
