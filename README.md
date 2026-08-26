@@ -2,7 +2,7 @@
 
 # Obiettivo
 
-MVP di un simulatore di retribuzione netta sviluppato per stimare il netto annuale e mensile a partire dalla RAL, mostrando le principali componenti del calcolo.
+MVP di un simulatore di retribuzione netta sviluppato per stimare il netto annuale e mensile a partire dalla RAL, mostrando le principali componenti del calcolo; nella MVP questi parametri non sono modificabili dall'utente.
 
 Il progetto è stato sviluppato come technical task.
 
