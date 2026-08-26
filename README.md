@@ -77,7 +77,7 @@ Sono inoltre implementate le detrazioni da lavoro dipendente e l'ulteriore detra
 
 # Fonti utilizzate
 
-** Fonti istituzionali **
+**Fonti istituzionali**
 
 [INPS — Aliquote contributive](https://www.inps.it/it/it/inps-comunica/diritti-e-obblighi-in-materia-di-sicurezza-sociale-nell-unione-e/per-le-imprese/aliquote-contributive.html?utm_source=chatgpt.com)
 
@@ -87,7 +87,7 @@ Sono inoltre implementate le detrazioni da lavoro dipendente e l'ulteriore detra
 
 [Comune di Milano — Addizionale comunale IRPEF](https://www.comune.milano.it/argomenti/tributi/addizionale-comunale-irpef?utm_source=chatgpt.com)
 
-** Fonti informative consultate **
+**Fonti informative consultate**
 
 [CAF Informa — Detrazioni lavoro dipendente 2026](https://cafinforma.it/detrazioni-lavoro-dipendente-2026/?utm_source=chatgpt.com)
 
